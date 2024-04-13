@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: black;
+}
+ul{
+    padding: 0px;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+/** HEADER **/
+header{
+    background-color: black;
+    margin: 15px;
+    border-radius: 15px;
+    padding: 10px;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul{
+    display: flex;
+    margin: 0px 20px;
+}
+header nav li{
+    font-family: "Hind siliguri", sans-serif;
+    font-size: 25px;
+    margin: 10px;
+    color: pink;
+}
+.logo{
+    height: 8%;
+    width: 8%;
+    margin: 0px 15px;
+}
+nav a {
+    text-decoration: none;
+    color: white; 
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline; 
+}
+/**HEADER**/
+
+/**FOOTER**/
+footer{
+    height: 90px;
+    border-radius: 15px;
+    background-color: black;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ul-footer{
+    display: flex;
+    justify-content: center;
+}
+.footerlist{
+    margin: 0px 10px;
+    font-family: "Hind siliguri", sans-serif;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+/**FOOTER**/
+
+/**INDEX**/
+.main-home {
+    background-color: white;
+    margin: 15px;
+    border-radius: 15px;
+    padding: 10px;
+}
+.titulo-home{
+    color: white;
+    background-color: black;
+    margin: 15px;
+    border-radius: 15px;
+    padding: 20px;
+}
+.section-home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row; 
+    margin-bottom: 20px;
+}
+.art-home {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    flex-direction: row;
+}
+/**INDEX**/
+
+/**CATEGORY**/
+.main-category{
+    background-color: white;
+    margin: 15px;
+    border-radius: 15px;
+    padding: 10px;
+}
+.titulo-category{
+    color: white;
+    background-color: black;
+    margin: 15px;
+    border-radius: 15px;
+    padding: 20px;
+}
+.section-category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row; 
+    margin-bottom: 20px; 
+}
+.art-category {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    flex-direction: row;
+}
+/**CATEGORY**/
+
+/**RECOVER**/
+.form-recover{
+    background-color: white;
+    margin: 15px;
+    border-radius: 15px;
+    padding: 10px;
+}
