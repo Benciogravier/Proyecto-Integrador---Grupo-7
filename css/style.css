@@ -146,3 +146,9 @@ footer{
     border-radius: 15px;
     padding: 10px;
 }
+
+/**REGISTER**/
+.form-register {
+    background-color: white;
+    
+}
