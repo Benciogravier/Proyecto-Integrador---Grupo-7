@@ -146,6 +146,13 @@ footer{
     border-radius: 15px;
     padding: 10px;
 }
+.titulo-recover{
+    color: white;
+    background-color: black;
+    margin: 15px;
+    border-radius: 15px;
+    padding: 20px;
+}
 
 /**REGISTER**/
 .form-register {
