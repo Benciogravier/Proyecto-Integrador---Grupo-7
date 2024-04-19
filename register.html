@@ -23,34 +23,37 @@
         </nav>
     </header>
     <main>
-        <h1>Registro</h1>
-        <h4>Completar los siguientes datos para continuar:</h4>
+        <h1 class="titulo-register">Registro</h1>
+        <h4 class="subtitulo-register">Completar los siguientes datos para continuar:</h4>
     </main>
     <form class="form-register" action="results.html" method="GET">
-        <div>
-            <label>Email:</label>
-            <input type="email" name="EmailDelUsuario" value="" placeholder="ejemplo@gmail.com">
-        </div>
-        <div>
-            <label>Contraseña:</label>
-            <input type="password" name="Contraseña" value="">
-        </div>
-        <div>
-            <label>Repetir contraseña:</label>
-            <input type="password" name="Contraseña" value="">
-        </div>
-        <div>
-            <label>Acepta los terminos y condiciones:</label>
-            <label>Si</label>
-            <input type="radio" name="evento" value="si">
-            <label>No</label>
-            <input type="radio" name="evento" value="no" checked>
-        </div>
-        <div>
-            <a href="login.html">Ya tengo una cuenta</a>
-        </div>
-        <button type="submit">Enviar</button>
-        <button type="reset">Borrar</button>
+        <section class="body-register">
+            <div>
+                <label>Email:</label>
+                <input type="email" name="EmailDelUsuario" value="" placeholder="ejemplo@gmail.com">
+            </div>
+            <div>
+                <label>Contraseña:</label>
+                <input type="password" name="Contraseña" value="">
+            </div>
+            <div>
+                <label>Repetir contraseña:</label>
+                <input type="password" name="Contraseña" value="">
+            </div>
+            <div>
+                <label>Acepta los terminos y condiciones:</label>
+                <label>Si</label>
+                <input type="radio" name="evento" value="si">
+                <label>No</label>
+                <input type="radio" name="evento" value="no" checked>
+            </div>
+            <div>
+                <a href="login.html">Ya tengo una cuenta</a>
+            </div>
+        </section>
+        <button class="enviar-register" type="submit">Enviar</button>
+        <button class="borrar-register" type="reset">Borrar</button>
+
     </form>
     <footer>
         <ul class="ul-footer">

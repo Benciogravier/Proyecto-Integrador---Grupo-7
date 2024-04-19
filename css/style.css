@@ -157,5 +157,32 @@ footer{
 /**REGISTER**/
 .form-register {
     background-color: white;
-    
+    margin: 15px;
+    border-radius: 15px;
+    padding: 10px;
+}
+.titulo-register {
+    color: white;
+    background-color: black;
+    margin: 15px;
+    border-radius: 15px;
+    padding: 20px;
+}
+.subtitulo-register {
+    color: black;
+    text-align: left;
+    margin-left: 40px;
+}
+.body-register {
+    text-align: left;
+    margin: 10px;
+
+}
+.enviar-register {
+    background-color: coral;
+    color: white;
+}
+.borrar-register {
+    background-color: coral;
+    color: white;
 }
