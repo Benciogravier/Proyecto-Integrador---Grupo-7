@@ -26,24 +26,28 @@
         <h1>Bienvenido</h1>
         <h4>Completar los siguientes datos para ingresar :</h4>
     </main>
-    <form action="results.html" method="GET">
-        <div>
-            <label>Email:</label>
-            <input type="email" name="EmailDelUsuario" value="" placeholder="ejemplo@gmail.com">
-        </div>
-        <div>
-            <label>Contraseña:</label>
-            <input type="password" name="Contraseña" value="">
-            <button type="submit">ingresar</button>
-        </div>
-        <div>
-            <a href="register.html">Si no tenes cuenta registrate aca</a>
-        </div>
-        <div>
-            <a href="recover.html">Si te olvidaste la contraseña toca aqui</a>
-        </div>
-        <button type="submit">Enviar</button>
-        <button type="reset">Borrar</button>
+    
+    <form class="form-login" action="results.html" method="GET">
+        <section>
+            <div>
+                <label>Email:</label>
+                <input type="email" name="EmailDelUsuario" value="" placeholder="ejemplo@gmail.com">
+            </div>
+            <div>
+                <label>Contraseña:</label>
+                <input type="password" name="Contraseña" value="">
+                <button type="submit">ingresar</button>
+            </div>
+            <div>
+                <a href="register.html">Si no tenes cuenta registrate aca</a>
+            </div>
+            <div>
+                <a href="recover.html">Si te olvidaste la contraseña toca aqui</a>
+            </div>
+            
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+        </section>
     </form>
     <footer>
         <ul class="ul-footer">
