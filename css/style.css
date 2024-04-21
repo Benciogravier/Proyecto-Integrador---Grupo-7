@@ -99,13 +99,33 @@ footer{
     justify-content: space-around;
     flex-direction: row; 
     margin-bottom: 20px;
+    max-width: 1600px;
 }
 .art-home {
     background-color: #f7f7f7;
     padding: 20px;
     margin: 10px;
     border: 1px solid #ddd;
-    flex-direction: row;
+    flex-direction: column;
+    width: 273px;
+    display: flex;
+    align-items: center;
+}
+.img-home {
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: 140px;
+    margin-bottom: 10px;
+}
+.lista-home {
+    list-style-type: none;
+    padding: 0;
+}
+.lista-home li {
+    margin-bottom: 10px;
 }
 /**INDEX**/
 
@@ -135,7 +155,27 @@ footer{
     padding: 20px;
     margin: 10px;
     border: 1px solid #ddd;
-    flex-direction: row;
+    flex-direction: column;
+    width: 270px;
+    display: flex;
+    align-items: center;
+
+}
+.img-category {
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: 140px;
+    margin-bottom: 10px;
+}
+.lista-category {
+    list-style-type: none;
+    padding: 0;
+}
+.lista-category li {
+    margin-bottom: 10px;
 }
 /**CATEGORY**/
 
@@ -153,7 +193,19 @@ footer{
     border-radius: 15px;
     padding: 20px;
 }
+.body-recover {
+    text-align: left;
+    margin: 10px;
 
+}
+.enviar-recover {
+    background-color: coral;
+    color: white;
+}
+.borrar-recover {
+    background-color: coral;
+    color: white;
+}
 /**REGISTER**/
 .form-register {
     background-color: white;
@@ -195,4 +247,12 @@ footer{
     border-radius: 15px;
     padding: 10px;
 
+}
+
+/**MEDIA QUERIES**/
+
+@media (max-width: 1080px){
+    header nav ul{
+        display: none;
+    }
 }

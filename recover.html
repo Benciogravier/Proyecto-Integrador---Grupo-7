@@ -22,23 +22,26 @@
             </ul>
         </nav>
     </header>
-
-    <h2 class="titulo-recover">Recuperar contraseña</h2>
+    <main>
+        <h2 class="titulo-recover">Recuperar contraseña</h2>
+    </main>
     <form class="form-recover" action="results.html" method="GET">
-        <div>
-            <label>Email:</label>
-            <input type="email" name="EmailDelUsuario" value="" placeholder="ejemplo@gmail.com">
-        </div>
+        <section class="body-recover">
+            <div>
+                <label>Email:</label>
+                <input type="email" name="EmailDelUsuario" value="" placeholder="ejemplo@gmail.com">
+            </div>
         
-        <div>
-            <label>Quiero recuperar mi contraseña:</label>
-            <label>Si</label>
-            <input type="radio" name="evento" value="si">
-            <label>No</label>
-            <input type="radio" name="evento" value="no" checked>
-        </div>
-        <button type="submit">Recuperar</button>
-        <button type="reset">Borrar</button>
+            <div>
+                <label>Quiero recuperar mi contraseña:</label>
+                <label>Si</label>
+                <input type="radio" name="evento" value="si">
+                <label>No</label>
+                <input type="radio" name="evento" value="no" checked>
+            </div>
+        </section>
+        <button class="enviar-recover" type="submit">Recuperar</button>
+        <button class="borrar-recover" type="reset">Borrar</button>
     </form>
     <footer>
         <ul class="ul-footer">
