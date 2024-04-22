@@ -107,7 +107,7 @@ footer{
     margin: 10px;
     border: 1px solid #ddd;
     flex-direction: column;
-    width: 273px;
+    width: 400px;
     display: flex;
     align-items: center;
 }
@@ -179,6 +179,11 @@ footer{
 }
 /**CATEGORY**/
 
+/**CARRITO**/
+.link-carrito {
+    text-align: right;
+}
+
 /**RECOVER**/
 .form-recover{
     background-color: white;
@@ -206,47 +211,37 @@ footer{
     background-color: coral;
     color: white;
 }
-/**REGISTER**/
-.form-register {
+/**REGISTER y LOGIN**/
+.form {
     background-color: white;
     margin: 15px;
     border-radius: 15px;
     padding: 10px;
 }
-.titulo-register {
+.titulo-form {
     color: white;
     background-color: black;
     margin: 15px;
     border-radius: 15px;
     padding: 20px;
 }
-.subtitulo-register {
+.subtitulo-form {
     color: black;
     text-align: left;
     margin-left: 40px;
 }
-.body-register {
+.body-form {
     text-align: left;
     margin: 10px;
 
 }
-.enviar-register {
+.enviar-form {
     background-color: coral;
     color: white;
 }
-.borrar-register {
+.borrar-form {
     background-color: coral;
     color: white;
-}
-
-/** form login**/
-
-.form-login {
-    background-color: white;
-    margin: 15px;
-    border-radius: 15px;
-    padding: 10px;
-
 }
 
 /**MEDIA QUERIES**/
