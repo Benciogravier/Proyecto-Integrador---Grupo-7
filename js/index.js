@@ -6,14 +6,14 @@ fetch('https://fakestoreapi.com/products/category/jewelery')
                 console.log(data);
 
                 let productos = document.querySelector(".section-home")
-                let arrayProductos = data
+                let arrayProductos = data;
                 let productosHTML = ""
 
-                for(let i = 0; i < 5; i++){
+                for(let i = 0; i < arrayProductos.length; i++){
                     productosHTML += 
                     `<article class="art-home">
                         <ul clas="lista-home">
-                            <li><img class=""img-home" src=""></li>
+                            <li><img class=""img-home" src="${arrayProductos[i].image}"></li>
                             <li><h2>${arrayProductos[i].title}</h2></li>
                             <li><p>${arrayProductos[i].description}</p></li>
                             <li><p>${arrayProductos[i].price}</p></li>
