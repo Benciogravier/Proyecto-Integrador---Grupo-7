@@ -16,5 +16,7 @@ formulario.addEventListener("submit",function(event){
         formulario.submit()
         let emailString = JSON.stringify(email.value)
         localStorage.setItem('email',emailString)
+        //preguntar si esta bien esto porque cada vez que mando el form 
+        //el email que hay en el local storage se reemplaza por el nuevo
     }
 })
