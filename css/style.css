@@ -227,11 +227,11 @@ footer{
 }
 .subtitulo-form {
     color: black;
-    text-align: left;
+    text-align: center;
     margin-left: 40px;
 }
 .body-form {
-    text-align: left;
+    text-align: center;
     margin: 10px;
 
 }

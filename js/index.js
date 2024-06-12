@@ -17,7 +17,7 @@ fetch('https://fakestoreapi.com/products/category/jewelery')
                             <li><h2>${arrayProductos[i].title}</h2></li>
                             <li><p>${arrayProductos[i].description}</p></li>
                             <li><p>${arrayProductos[i].price}</p></li>
-                            <a href="./producto.html?id=${arrayProductos[i].id}"> </a>
+                            <a href="./producto.html?id=${arrayProductos[i].id}"> Ver mas </a>
                         </ul>
                     </article>
                     `

@@ -27,22 +27,22 @@
         <h4 class="subtitulo-form">Completar los siguientes datos para ingresar:</h4>
     </main>
     
-    <form class="form" action="results.html" method="GET">
+    <form class="form" action="index.html" method="GET">
         <section class="body-form">
             <div>
                 <label>Email:</label>
-                <input type="email" name="EmailDelUsuario" value="" placeholder="ejemplo@gmail.com">
+                <input id="email" type="email" name="EmailDelUsuario" value="" placeholder="ejemplo@gmail.com">
             </div>
             <div>
                 <label>Contraseña:</label>
-                <input type="password" name="Contraseña" value="">
+                <input id="contraseña" type="password" name="Contraseña" value="">
                 <button type="submit">ingresar</button>
             </div>
             <div>
-                <a href="register.html">Si no tenes cuenta registrate aca</a>
+                <a href="register.html">No tengo cuenta</a>
             </div>
             <div>
-                <a href="recover.html">Si te olvidaste la contraseña toca aqui</a>
+                <a href="recover.html">Recuperar Contraseña</a>
             </div>
             
             <button class="enviar-form" type="submit">Enviar</button>
@@ -56,5 +56,6 @@
             <li class="footerlist">Joaquin Rosas</li>
         </ul>
     </footer>
+    <script src="./js/login.js"></script>
 </body>
 </html>
