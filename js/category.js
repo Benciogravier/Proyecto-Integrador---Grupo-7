@@ -18,7 +18,7 @@ fetch(`https://fakestoreapi.com/products/category/jewelery?=${id}`)
                 for(let i = 0; i < arrayCategory.length; i++){
                     categoryHTML += 
                     `<article class="art-category">
-                        <a href="./producto.html">
+                        <a href="./producto.html?id=${arrayCategory[i].id}">
                         <ul class="lista-category">
                             <li><img class="img-category" src="${arrayCategory[i].image}"></li>
                             <li><h2>${arrayCategory[i].title}</h2></li>
