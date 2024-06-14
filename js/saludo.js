@@ -1,6 +1,6 @@
 
 
-/
+
 let usuarioAutenticado = true;
 let emailUsuario = 'usuario@example.com';
 
@@ -27,7 +27,7 @@ function modificarHeader() {
     }
 }
 
-/
+
 
         
         let elementosLoginRegistro = document.querySelectorAll('.login, .registro');

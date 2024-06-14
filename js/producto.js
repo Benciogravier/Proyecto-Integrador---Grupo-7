@@ -29,13 +29,14 @@ fetch(`https://fakestoreapi.com/products/${id}`)
                 detProductos.innerHTML = detProductosHTML;
 
                 let link = document.querySelector(".link")
-                
+                let idS = []
                 link.addEventListener("click",function(){
-                    
-                    let guardar = JSON.stringify(id)
+                    let idsLS = localStorage.getItem('id')
+                    let idParseado = JSON.parse(idsLS)
+                    idS = idParseado
+                    idS.push(id)
+                    let guardar = JSON.stringify(idS)
                     localStorage.setItem("id", guardar)
-                    
-                    
                 })
             })
             .catch(function(error){
