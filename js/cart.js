@@ -32,5 +32,9 @@ if (idLocalStorage == null) {
            
     }
     console.log(carritoRecorrido);
-    
 }
+let compraFinalizar = document.querySelector("button")
+compraFinalizar.addEventListener('click', function(){
+    localStorage.clear()
+    alert("Compra finalizada! Muchas gracias por confiar en nosotros")
+})
