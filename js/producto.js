@@ -1,8 +1,8 @@
-let queryString = window.location.search
+let queryString = location.search
 let queryStringObj = new URLSearchParams(queryString);
 let id = queryStringObj.get("id");
 
-fetch(`https://fakestoreapi.com/products/?=${id}`)
+fetch(`https://fakestoreapi.com/products/${id}`)
             .then(function(res){
                 return res.json()
             })
@@ -10,7 +10,7 @@ fetch(`https://fakestoreapi.com/products/?=${id}`)
                 console.log(data);
 
                 let detProductos = document.querySelector(".section-home")
-                let arraydetProductos = data.data;
+                let arraydetProductos = data;
                 let detProductosHTML = ""
 
                 
@@ -22,18 +22,21 @@ fetch(`https://fakestoreapi.com/products/?=${id}`)
                             <li><p>${arraydetProductos.description}</p></li>
                             <li><p>${arraydetProductos.price}</p></li>
                             <li><a href="./category.html"</a> Categoria</li>
-                            <li><a href="./cart.html">Agregar al carrito</a></li>
+                            <li><a href="./cart.html" class="link">Agregar al carrito</a></li>
                         </ul>
                     </article>`
                 
                 detProductos.innerHTML = detProductosHTML;
 
-                //let listaProd = document.querySelector("lista-prod")
-
-                //for(i=0;i <arraydetProductos.length; i++){
-                    //console.log(arraydetProductos[i]);
-                    //listaProd.innerHTML += `<a href="./cart.html?id=${listaProd[i].id}">Agregar al carrito</a>`
-                //}
+                let link = document.querySelector(".link")
+                
+                link.addEventListener("click",function(){
+                    
+                    let guardar = JSON.stringify(id)
+                    localStorage.setItem("id", guardar)
+                    
+                    
+                })
             })
             .catch(function(error){
                 console.log(error);
