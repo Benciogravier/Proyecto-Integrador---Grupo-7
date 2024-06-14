@@ -251,3 +251,27 @@ footer{
         display: none;
     }
 }
+
+/** validando registro **/
+
+.validandoE{
+    display: none;
+    color: red;
+    justify-content: center;
+}
+.validandoR{
+    display: none;
+    color: red;
+    justify-content: center;
+}
+.validando6{
+    display: none;
+    color: red;
+    justify-content: center;
+}
+.validandoC{
+    display: none;
+    color: red;
+    justify-content: center;
+}
+

@@ -26,19 +26,27 @@
         <h1 class="titulo-form">Registro</h1>
         <h4 class="subtitulo-form">Completar los siguientes datos para continuar:</h4>
     </main>
-    <form class="form" action="results.html" method="GET">
+    <form class="form" action="login.html" method="GET">
         <section class="body-form">
             <div>
                 <label>Email:</label>
-                <input type="email" name="EmailDelUsuario" value="" placeholder="ejemplo@gmail.com">
+                <input id="E" type="email" name="EmailDelUsuario" value="" placeholder="ejemplo@gmail.com">
+                <p class="validandoE"> Por favor complete campo</p>
             </div>
             <div>
                 <label>Contraseña:</label>
-                <input type="password" name="Contraseña" value="">
+                <input id="C" type="password" name="Contraseña" value="">
+                <p class="validandoC"> Por favor complete campo</p>
+                <p class="validando6"> Debe ingresar al menos 6 caracteres</p>
+
             </div>
             <div>
                 <label>Repetir contraseña:</label>
-                <input type="password" name="Contraseña" value="">
+                <input id="RC" type="password" name="Contraseña" value="">
+                <p class="validandoR">Las contraseñas no coinciden</p>
+            </div>
+            <div>
+                <button type="submit">Registrame</button>
             </div>
             <div>
                 <label>Acepta los terminos y condiciones:</label>
@@ -51,8 +59,6 @@
                 <a href="login.html">Ya tengo una cuenta</a>
             </div>
         </section>
-        <button class="enviar-form" type="submit">Enviar</button>
-        <button class="borrar-form" type="reset">Borrar</button>
 
     </form>
     <footer>
@@ -62,5 +68,6 @@
             <li class="footerlist">Joaquin Rosas</li>
         </ul>
     </footer>
+    <script src="js/register.js"></script>
 </body>
 </html>
