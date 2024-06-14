@@ -22,21 +22,28 @@ fetch(`https://fakestoreapi.com/products/${id}`)
                             <li><p>${arraydetProductos.description}</p></li>
                             <li><p>${arraydetProductos.price}</p></li>
                             <li><a href="./category.html"</a> Categoria</li>
-                            <li><a href="./cart.html" class="link">Agregar al carrito</a></li>
+                            <li><a href="#" class="link">Agregar al carrito</a></li>
                         </ul>
                     </article>`
                 
                 detProductos.innerHTML = detProductosHTML;
 
                 let link = document.querySelector(".link")
-                let idS = []
+
                 link.addEventListener("click",function(){
                     let idsLS = localStorage.getItem('id')
-                    let idParseado = JSON.parse(idsLS)
-                    idS = idParseado
-                    idS.push(id)
-                    let guardar = JSON.stringify(idS)
-                    localStorage.setItem("id", guardar)
+                    console.log(idsLS);
+                    if (idsLS == null) {
+                        let idS = []
+                        idS.push(id)
+                        let guardar = JSON.stringify(idS)
+                        localStorage.setItem("id", guardar)
+                    } else {
+                        let idParseado = JSON.parse(idsLS)
+                        idParseado.push(id)
+                        let guardar = JSON.stringify(idParseado)
+                        localStorage.setItem("id", guardar)
+                    }
                 })
             })
             .catch(function(error){
