@@ -4,12 +4,18 @@ console.log(email);
 
 let bienvenida = document.querySelector("#saludo")
 
-let registro 
+let registro = document.querySelector(".registro")
+
+let login = document.querySelector(".login")
+
+let logout = document.querySelector(".logout")
 
 if (email != null) {
     //muestro el saludo y oculto login y registro
-    bienvenida.innerHTML = `${"bienvenido : "+email}`
-}else{
-    //muestro el registro de login y oculto el saludo
-    
+    bienvenida.innerHTML = `Bienvenido: ${email}`
+    bienvenida.style.color = "white"
+    registro.style.display = "none"
+    login.style.display = "none"
+    logout.style.display = "flex"
+
 }

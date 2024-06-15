@@ -59,6 +59,12 @@ nav a:hover {
 .registro{
     display: flex;
 }
+.logout {
+    display: none;
+}
+.saludo {
+    display: flex;
+}
 /**HEADER**/
 
 /**FOOTER**/
