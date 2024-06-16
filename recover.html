@@ -25,23 +25,26 @@
     <main>
         <h2 class="titulo-recover">Recuperar contraseña</h2>
     </main>
-    <form class="form-recover" action="results.html" method="GET">
+    <form class="form-recover" action="recover.html" method="GET">
         <section class="body-recover">
             <div>
                 <label>Email:</label>
-                <input type="email" name="EmailDelUsuario" value="" placeholder="ejemplo@gmail.com">
+                <input id="Email" type="email" name="EmailDelUsuario" value="" placeholder="ejemplo@gmail.com">
+                <p class="mailInc">Por favor escriba su mail:</p>
             </div>
         
             <div>
                 <label>Quiero recuperar mi contraseña:</label>
                 <label>Si</label>
-                <input type="radio" name="evento" value="si">
+                <input class="checked" type="radio" name="evento" value="si">
                 <label>No</label>
-                <input type="radio" name="evento" value="no" checked>
+                <input class="checked" type="radio" name="evento" value="no" checked>
+                <p class="checkBox">Por favor acepte el campo "Quiero recuperar mi contraseña"</p>
             </div>
         </section>
         <button class="enviar-recover" type="submit">Recuperar</button>
-        <button class="borrar-recover" type="reset">Borrar</button>
+        
+        <p class="irLogin"><a href="./login.html">Ir a login</a></p>
     </form>
     <footer>
         <ul class="ul-footer">

@@ -286,4 +286,15 @@ footer{
     color: red;
     justify-content: center;
 }
+/** validando recupero**/
+.mailInc{
+    display: none;
+    color: red;
+    justify-content: center;
+}
+.checkBox{
+    display: none;
+    color: red;
+    justify-content: center;
+}
 

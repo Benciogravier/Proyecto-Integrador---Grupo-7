@@ -4,7 +4,7 @@ let contraseña = document.querySelector("#C")
 
 let Rcontraseña = document.querySelector("#RC")
 
-let formulario = document.querySelector("form")
+let formulario = document.querySelector("form")// falta el punto
 
 formulario.addEventListener("submit",function(event){
     event.preventDefault()
