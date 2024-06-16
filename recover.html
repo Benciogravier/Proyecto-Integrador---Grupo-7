@@ -29,22 +29,20 @@
         <section class="body-recover">
             <div>
                 <label>Email:</label>
-                <input id="Email" type="email" name="EmailDelUsuario" value="" placeholder="ejemplo@gmail.com">
-                <p class="mailInc">Por favor escriba su mail:</p>
+                <input id="email" type="email" name="EmailDelUsuario" value="" placeholder="ejemplo@gmail.com">
+                <p class="mailInc">Por favor escriba su mail</p>
             </div>
         
             <div>
                 <label>Quiero recuperar mi contraseña:</label>
-                <label>Si</label>
-                <input class="checked" type="radio" name="evento" value="si">
-                <label>No</label>
-                <input class="checked" type="radio" name="evento" value="no" checked>
+                <input id="checkbox" type="checkbox" name="recuperarContraseña" value="no">
                 <p class="checkBox">Por favor acepte el campo "Quiero recuperar mi contraseña"</p>
             </div>
+            <button class="enviar-recover" type="submit">Recuperar</button>
         </section>
-        <button class="enviar-recover" type="submit">Recuperar</button>
-        
-        <p class="irLogin"><a href="./login.html">Ir a login</a></p>
+        <p class="irLogin">Recibirás un email con las instrucciones para recuperar tu contraseña.</p> 
+        <a class="linkLogin"  href="./login.html">Ir a login</a>
+
     </form>
     <footer>
         <ul class="ul-footer">
@@ -55,5 +53,6 @@
     </footer>
     <script src="./js/recover.js"></script>
     <script src="./js/logout.js"></script>
+    <script src="./js/saludo.js"></script>
 </body>
 </html>

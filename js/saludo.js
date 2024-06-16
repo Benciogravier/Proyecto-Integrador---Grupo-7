@@ -17,5 +17,4 @@ if (email != null) {
     registro.style.display = "none"
     login.style.display = "none"
     logout.style.display = "flex"
-
 }

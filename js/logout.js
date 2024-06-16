@@ -1,13 +1,12 @@
-let logout = document.querySelector("#link")
-let saludo = document.querySelector(".saludo")
-let login = document.querySelector(".login")
-let registro = document.querySelector(".registro")
+//Logout
 
-logout.addEventListener("click", function(){
-    localStorage.clear()
-    saludo.style.display = 'none'
-    logout.style.display = 'none'
-    login.style.display = 'flex'
+//las otras variables ya estan en saludo.js y como estan linkeados a los 
+//mismos html no hace falta renombrar las variables (seria un sintax error)
+
+logout.addEventListener('click',function(){
+    bienvenida.style.display = 'none'
     registro.style.display = 'flex'
+    login.style.display = 'flex'
+    logout.style.display = 'none'
+    localStorage.clear()
 })
-

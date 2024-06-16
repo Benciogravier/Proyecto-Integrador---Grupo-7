@@ -1,20 +1,26 @@
-let email = document.querySelector("#Email")
+let email = document.querySelector("#email")
 
-let checkbox = document.querySelector(".checked")
+let checkBox = document.querySelector("#checkbox")
 
 let irLogin = document.querySelector(".irLogin")
+let linkLogin = document.querySelector(".linkLogin")
 
-let form = document.querySelector(".form-recover")
+let form = document.querySelector("form")
 
-form-addEventListener("submit", function(e){
-    e.preventDefault()
-    if(email == ""){
+form.addEventListener("submit", function(event){
+    event.preventDefault()
+    if (email.value == ''){
         let mailInc = document.querySelector(".mailInc")
         mailInc.style.display = "flex"
-    } else if(checkbox == ""){
+    } else if (checkBox.value == 'no') {
         let checkboxInc = document.querySelector(".checkBox")
-        checkboxInc.style.checkboxInc = "flex"
-    }else{
-        form.submit()
+        checkboxInc.style.display = "flex"
+    } else {
+        irLogin.style.display = 'flex'
+        linkLogin.style.display = 'flex'
     }      
 })
+checkBox.addEventListener('click',function(){
+    checkBox.value = 'si'
+}) 
+//cuando el usuario complete el campo, su valor cambio, por lo que permetiria mandarse el form

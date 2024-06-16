@@ -211,7 +211,7 @@ footer{
     padding: 20px;
 }
 .body-recover {
-    text-align: left;
+    text-align: center;
     margin: 10px;
 
 }
@@ -297,4 +297,14 @@ footer{
     color: red;
     justify-content: center;
 }
+.irLogin {
+    display: none;
+    color: green;
+    justify-content: center;
 
+}
+.linkLogin {
+    display: none;
+    color: green;
+    justify-content: center;
+}
