@@ -18,7 +18,7 @@ a{
     text-decoration: none;
 }
 
-/** HEADER **/
+/**HEADER**/
 header{
     background-color: black;
     margin: 15px;
@@ -223,7 +223,7 @@ footer{
     background-color: coral;
     color: white;
 }
-/**REGISTER y LOGIN**/
+/**REGISTER_y_LOGIN**/
 .form {
     background-color: white;
     margin: 15px;
@@ -256,7 +256,7 @@ footer{
     color: white;
 }
 
-/**MEDIA QUERIES**/
+/**MEDIA_QUERIES**/
 
 @media (max-width: 1080px){
     header nav ul{
@@ -264,3 +264,52 @@ footer{
     }
 }
 
+/** validando_registro **/
+
+
+.validandoE{
+    display: none;
+    color: red;
+    justify-content: center;
+ }
+ .validandoR{
+    display: none;
+    color: red;
+    justify-content: center;
+ }
+ .validando6{
+    display: none;
+    color: red;
+    justify-content: center;
+ }
+ .validandoC{
+    display: none;
+    color: red;
+    justify-content: center;
+ }
+ /** validadando_recupero**/
+ .mailInc{
+    display: none;
+    color: red;
+    justify-content: center;
+ }
+ .checkBox{
+    display: none;
+    color: red;
+    justify-content: center;
+ }
+ .irLogin {
+    display: none;
+    color: green;
+    justify-content: center;
+ 
+ 
+ }
+ .linkLogin {
+    display: none;
+    color: green;
+    justify-content: center;
+ }
+ 
+ 
+ 

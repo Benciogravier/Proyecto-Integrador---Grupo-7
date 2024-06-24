@@ -1,5 +1,5 @@
 let idLocalStorage = localStorage.getItem('id')
-let idParseado = JSON.parse(idLocalStorage) //array de los id's agregados al carrito
+let idParseado = JSON.parse(idLocalStorage) //array_de_los_id's_agregados_al_carrito
 
 if (idLocalStorage == null) {
     let texto = document.querySelector("h2")
