@@ -38,31 +38,27 @@ fetch("https://fakestoreapi.com/products")
             let ropaMujeres = document.querySelector(".section-home-women")
             let mujeresRecorrido = ''
             for (let i = 0; i < data.length; i++) {
-                if (data[i].category == "men's clothing") { //parte hecha por benicio
-                    RopaHRecorrida = RopaHRecorrida + `<article class="art-home-men">
+                if (data[i].category == "men's clothing") {
+                    RopaHRecorrida += `<article class="art-home-men">
                         <ul class="lista-home-men">
-                            <img class="img-home-men" src="${data[i].image}">
-                            <h2>${data[i].title}</h2>
-                            <p>${data[i].description}</p>
-                            <p>${data[i].price} USD</p>
-                            <a href="./producto.html?id=${data[i].id}">
-                                <p>Ver mas</p>
-                            </a>
+                            <li><img class="img-home-men" src="${data[i].image}"></li>
+                            <li><h2>${data[i].title}</h2></li>
+                            <li><p>${data[i].description}</p></li>
+                            <li><p>${data[i].price} USD</p></li>
+                            <li><a href="./producto.html?id=${data[i].id}">Ver mas</a></li>
                         </ul>
-                    </article>`
-                } else if (data[i].category == "women's clothing") { //parte hecha por beltran
-                    mujeresRecorrido = mujeresRecorrido + `<article class="art-home-women">
+                    </article>`;
+                } else if (data[i].category == "women's clothing") {
+                    mujeresRecorrido += `<article class="art-home-women">
                         <ul class="lista-home-women">
-                            <img class="img-home-women" src="${data[i].image}">
-                            <h2>${data[i].title}</h2>
-                            <p>${data[i].description}</p>
-                            <p>${data[i].price} USD</p>
-                            <a href="./producto.html?id=${data[i].id}">
-                                <p>Ver mas</p>
-                            </a>
+                            <li><img class="img-home-women" src="${data[i].image}"></li>
+                            <li><h2>${data[i].title}</h2></li>
+                            <li><p>${data[i].description}</p></li>
+                            <li><p>${data[i].price} USD</p></li>
+                            <li><a href="./producto.html?id=${data[i].id}">Ver mas</a></li>
                         </ul>
-                    </article>`
-                }
+                    </article>`;
+                }                
             }
             ropaHombre.innerHTML = RopaHRecorrida
             ropaMujeres.innerHTML = mujeresRecorrido

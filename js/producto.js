@@ -21,8 +21,8 @@ fetch(`https://fakestoreapi.com/products/${id}`)
                             <li><h2>${arraydetProductos.title}</h2></li>
                             <li><p>${arraydetProductos.description}</p></li>
                             <li><p>${arraydetProductos.price}</p></li>
-                            <li><a href="./category.html"</a> Categoria</li>
-                            <li><a href="#" class="link">Agregar al carrito</a></li>
+                            <li><a href="./category.html">Categoria</a></li>
+                            <li><a href="#" class="link">Agregar al carrito</a></li>                            
                         </ul>
                     </article>`
                 
